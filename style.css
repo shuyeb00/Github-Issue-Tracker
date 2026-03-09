@@ -1,0 +1,212 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay.hidden {
+    display: none;
+}
+
+.modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-box-custom {
+    position: relative;
+    z-index: 10;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 580px;
+    margin: 1rem;
+    padding: 2rem;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.issue-card {
+    background: white;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    border-top-width: 4px;
+    padding: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: box-shadow 0.2s;
+}
+
+.issue-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+.card-open {
+    border-top-color: #22c55e;
+}
+
+.card-closed {
+    border-top-color: #a855f7;
+}
+
+.state-icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+}
+
+.state-icon.open {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.state-icon.closed {
+    background: #f3e8ff;
+    color: #9333ea;
+}
+
+.priority-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.2rem 0.75rem;
+    border-radius: 9999px;
+}
+
+.priority-high {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.priority-medium {
+    background: #fef9c3;
+    color: #b45309;
+}
+
+.priority-low {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.priority-default {
+    background: #f3f4f6;
+    color: #6b7280;
+}
+
+.label-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.2rem 0.75rem;
+    border-radius: 9999px;
+    border: 1px solid;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.label-bug {
+    background: #fee2e2;
+    color: #dc2626;
+    border-color: #fca5a5;
+}
+
+.label-help {
+    background: #fef9c3;
+    color: #b45309;
+    border-color: #fde68a;
+}
+
+.label-feature {
+    background: #dbeafe;
+    color: #1d4ed8;
+    border-color: #93c5fd;
+}
+
+.label-enhancement {
+    background: #f3e8ff;
+    color: #7e22ce;
+    border-color: #d8b4fe;
+}
+
+.label-question {
+    background: #ccfbf1;
+    color: #0f766e;
+    border-color: #5eead4;
+}
+
+.label-default {
+    background: #f3f4f6;
+    color: #374151;
+    border-color: #d1d5db;
+}
+
+.tab-btn.active-tab {
+    background-color: #1f2937;
+    color: white;
+    border-color: #1f2937;
+}
+
+.state-pill-open {
+    background: #22c55e;
+    color: white;
+    padding: 0.2rem 0.85rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.state-pill-closed {
+    background: #a855f7;
+    color: white;
+    padding: 0.2rem 0.85rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.close-btn {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 0.6rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.close-btn:hover {
+    background: #4338ca;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #1f2937;
+    line-height: 1.4;
+}
+
+.card-desc {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    line-height: 1.5;
+}
+
+.card-bottom {
+    font-size: 0.72rem;
+    color: #9ca3af;
+}
+
+.card-bottom span {
+    font-weight: 600;
+    color: #6b7280;
+}
