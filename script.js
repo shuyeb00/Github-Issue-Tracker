@@ -140,8 +140,8 @@ const getLabelBadges = (labels) => {
 
 
 const formatDate = (dateStr) => {
-    if (!dateStr) return "N/A"
-    return new Date(dateStr).toLocaleDateString("en-US")
+    const date = new Date(dateStr)
+    return date.toLocaleDateString("en-US")
 }
 
 
